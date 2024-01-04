@@ -229,8 +229,10 @@ public class Ex10_Casting {
 	
 	String txt6 = true +""; // true false도 가능. 
 	
-	
-	
+	 // 변수명을 파일안에서 수정하고 싶으면 Ctrl + 1 [전체에서 수정도 가능] , 단 파일명은 안 됨 
+	// 파일명은 Refactor >  Rename 메뉴를 통해 수정 
+	int number =10;
+	System.out.println(number);
 	
 	
 	}
