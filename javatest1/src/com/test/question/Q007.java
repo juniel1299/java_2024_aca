@@ -1,24 +1,24 @@
 package com.test.question;
 
-import java.io.BufferedReader;
+import java.util.Scanner;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Q007 {
 public static void main(String[] args) throws IOException {
 	System.out.print("문자입력 : \n");
-	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-	String lowAlphabet = reader.readLine();
+	Scanner scan = new Scanner(System.in);
 	
+	char code = 0;
+	char result = 0;
 	
-	String upper =  lowAlphabet;
+	code = scan.nextLine().charAt(0);
 	
-char up = ((Integer.)lowAlphabet + 32);
-	 
-	System.out.printf("소문자 '%s'의 대문자는 '%s' 입니다.\n", lowAlphabet, upper);
-
+	result = (char)((int)code - 32);
 	
+	System.out.printf("소문자 '%c'의 대문자는 '%c'입니다.\n ",code, result);
+	scan.close();
 }
 
 }

@@ -16,7 +16,7 @@ public static void main(String[] args) throws IOException {
 	int year1 = reader.read();
 	
 	age = (2024 - 1999);
-	System.out.printf(" 나이는 %d 입니다.",age );
+	System.out.printf(" 나이 : %d세.",age );
 		
 	
 	

@@ -1,10 +1,10 @@
 package com.test.java;
 
-public class Ex17_LocalVariable {
+//public class Ex17_LocalVariable {
 
-	int b = 20; // 멤버 변수 (메서드 작성하는 위치에 작성할 수 있음 , 클래스의 자식 , 클래스 전체에서 쓰는 변수)
+	//int b = 20; // 멤버 변수 (메서드 작성하는 위치에 작성할 수 있음 , 클래스의 자식 , 클래스 전체에서 쓰는 변수)
 
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
 		// Ex17_LocalVariable
 
 		// 자바 변수의 종류
@@ -22,8 +22,8 @@ public class Ex17_LocalVariable {
 			// 생성 > 변수 선언문이 실행할 때
 			// 소멸 > 변수 선언문이 포함된 블럭을 빠져나갈 때
 		// main 메서드 변수는 소멸이 늦음 > 메모리량 증가 
-		int a = 10; // 지역 변수
-
+		//int a = 10; // 지역 변수
+/*
 		int num=100;
 		checkNumber(num); 
 		
@@ -35,8 +35,8 @@ public class Ex17_LocalVariable {
 		int a = 10;
 		bbb();
 	}
-	
-	public static void bbb() {
+	*/
+	/*public static void bbb() {
 		System.out.println(a);
 	}
 	public static void checkNumber (int num) {
@@ -53,3 +53,4 @@ public class Ex17_LocalVariable {
 
 
 }
+*/
