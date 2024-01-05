@@ -20,14 +20,14 @@ kor = scan.nextInt();
 
 
 
-test(int kor, int eng, int math);	
+//test(int kor, int eng, int math);	
 	
 }
 
 private static void test(int kor, int eng, int math) {
 	// TODO Auto-generated method stub
 	int fail =0;
- 	  fail < ((kor + eng + math )/3)  "불합격" ; 
+ //	  fail < ((kor + eng + math )/3)  "불합격" ; 
 	
 	
 	
