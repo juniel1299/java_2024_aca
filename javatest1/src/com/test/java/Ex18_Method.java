@@ -23,7 +23,7 @@ public class Ex18_Method {
 		// 1번 . public static void test(){} //가능
 		// 2번 . public static void test(){} //x 1번만
 		// 3번 . public static void test(int n){} //가능
-		// 4번 . public static void test(int m){} // x 불가능, 
+		// 4번 . public static void test(int m){} // x 불가능,
 		// 5번 . public static void test(int n, int m){} //가능
 		// 6번 . public static void test(String m){} //불가능
 		// 7번 . public static int test(){} // 불가능
@@ -34,8 +34,7 @@ public class Ex18_Method {
 		// 이름이 같아도 안에 변수를 넣으면 이름이 같아도 됨 .
 		// test("문자열"); 6번의 경우 String 값형과 겹치지 않는 참조형이기 때문에 가능함.
 		// 7번의 경우 1번과 구분이 안 감 int result = test(); 이므로 test(); 부터 실행 -> 겹침 (반환값의 자료형)
-		
-		
+
 		// 요구사항) 선을 그리는 메서드를 선언하시오.
 		// 요구사항) -----
 		// 요구사항) *****
@@ -79,5 +78,23 @@ public class Ex18_Method {
 		System.out.print(c);
 
 	}
+	
+	//코드 컨벤션
+	//네이밍 규칙 > 변수명, 클래스명, 메서드명 등 ..
+	
+	
+	
+	//K&R 스타일 (중괄호 위치)
+	public static void m1() {
 
+
+	}
+	//Allman 스타일 (중괄호 위치)
+	public static void m2() 
+	{
+
+
+
+	}
 }
+
