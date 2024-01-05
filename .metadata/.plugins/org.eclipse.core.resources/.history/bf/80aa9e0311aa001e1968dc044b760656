@@ -1,0 +1,12 @@
+package com.test.java;
+
+public class Ex05_Escape {
+
+	public static void main(String[] args) {
+		// 컴파일러가 변역 할 때, 소스의 문자를 그대로 출력하지 않고, 미리 약속된 표현으로 바꿔서 출력
+		String c1="안녕\n하세요";
+		System.out.println(c1);
+		c1="홍길동:\"안녕하세요\"";
+		System.out.println(c1);
+	}
+}

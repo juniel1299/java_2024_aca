@@ -1,0 +1,16 @@
+package com.test.java;
+
+public class Ex02_Variable {
+	
+	public static void main(String[] args) {
+		
+		for(int i = 1;i<10;i++) {
+			int sum=0;
+			sum+=i;
+			System.out.println(sum);
+		}
+		
+	}
+
+}
+

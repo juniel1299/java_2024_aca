@@ -1,0 +1,50 @@
+package com.test.java;
+
+public class Ex15_Method {
+
+	public static void main(String[] args) {
+		
+		//Ex15_Method
+		//public static void hello()
+		
+		//void > 반환타입
+		//hello > 메서드명
+		// () > 인자리스트
+		
+		//메서드 인자리스트
+		//-파라미터
+		int a=50;
+		hello("아무개");
+		hello("홍길동");
+		checkAge(a);
+		checkScore(80,80,60);
+		
+		
+	}//main
+	
+	public static void hello(String name) {
+		
+		System.out.println(name+"님. 안녕하세요.");
+	}//hello
+	
+	public static void checkAge(int age) {
+		
+		String result=age>18?"pass":"no";
+		System.out.printf("입력한 나이 %d세는 %s입니다\n",age,result);
+	}//checkAge
+	
+	/**
+	 * 
+	 * @param kor 국어점수
+	 * @param eng 영어점수
+	 * @param math 수학점수
+	 */
+	public static void checkScore(int kor, int eng, int math) {
+		
+		int total=kor+eng+math;
+		double avg=total/3.0;
+		String result=avg>=60?"pass":"no";
+		System.out.printf("평균점수 %.1f점은 %s입니다.",avg,result);
+	}
+	
+}//Ex15_Method

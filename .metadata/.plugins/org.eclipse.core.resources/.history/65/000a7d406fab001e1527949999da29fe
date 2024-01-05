@@ -1,0 +1,44 @@
+package com.test.java;
+
+import java.util.Calendar;
+import java.util.Date;
+
+public class Ex20_DateTime {
+
+	public static void main(String[] args) {
+		
+		//Ex20_DateTime
+		/*
+		 
+		 자바의 날짜/시간 자료형
+		 1. Date 클래스
+		 2. Calendar 클래스
+		 3. java.time 패키지 > 추가 클래스
+		 
+		 */
+		//m1();
+		m2();
+	}
+
+	private static void m2() {
+		Calendar c1= Calendar.getInstance();
+		System.out.println(c1);
+		System.out.println(c1.get(c1.YEAR));
+		System.out.println(c1.get(c1.MONTH));
+		System.out.println(c1.get(c1.DATE));
+		System.out.println(c1.get(c1.HOUR));
+		System.out.println(c1.get(c1.HOUR_OF_DAY));
+		System.out.println(c1.get(c1.MINUTE));
+		System.out.println(c1.get(c1.SECOND));
+		
+		
+	}
+
+	private static void m1() {
+		
+		Date now= new Date();
+		System.out.println(now);
+		
+	}
+	
+}

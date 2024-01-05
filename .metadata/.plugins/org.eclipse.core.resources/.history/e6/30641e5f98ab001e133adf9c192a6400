@@ -1,0 +1,21 @@
+package com.test.java;
+
+public class Ex11_Operator {
+
+	public static void main(String[] args) {
+		
+//		byte j = 10;
+//		byte k = 20;
+//		System.out.println(j+k);
+//		byte l = (byte)(j+k);
+		//byte 와 short의 연산 결과는 항상 int다
+		// 정수는 int주로 사용
+		
+		//달력 만들기
+		//1. 년월 > 1일 > 무슨요일인지
+		//2. 년월 > 마지막일
+		
+	}
+	
+}
+

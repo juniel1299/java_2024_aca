@@ -1,0 +1,12 @@
+package com.test.java;
+
+public class Ex02_Variable {
+	
+	public static void main(String[] args) {
+		
+		int age=25;
+		System.out.println(age);
+		
+	}
+}
+

@@ -1,0 +1,62 @@
+package com.test.java;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Ex21_if {
+
+	public static void main(String[] args) throws IOException {
+		
+		//m1();
+		//m2();
+		m3();
+		
+	}
+
+	private static void m3() throws NumberFormatException, IOException {
+		
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("기상 시간(시) : ");
+		int hour=Integer.parseInt(reader.readLine());
+		if(hour<6) {
+			System.out.println("subway");
+		}
+		else if(hour<7) {
+			System.out.println("bus");
+		}
+		else {
+			System.out.println("taxi");
+		}
+		
+	}
+
+	private static void m2() throws IOException {
+		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("나이 : ");
+		int age=Integer.parseInt(reader.readLine());
+		if(age>19) {
+			System.out.println("성인입니다.");
+			
+		}else {
+			System.out.println("미성년자입니다.");
+		}
+		
+	}
+
+	private static void m1() {
+		int num=0;
+		
+		if(num>0) {
+			System.out.println("num은 양수입니다.");
+		}
+		else if(num<0) {
+			System.out.println("num은 음수입니다.");
+		}
+		else {
+			System.out.println("num은 0입니다");
+		}
+		
+	}
+	
+}

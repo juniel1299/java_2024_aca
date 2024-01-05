@@ -1,0 +1,15 @@
+package com.test.java;
+
+public class Ex02_Variable {
+	
+	public static void main(String[] args) {
+		
+		byte age=26;
+		short myHeight=184;
+		int money=1000000;
+		
+		System.out.println("제 나이는 "+age+"살입니다.");
+		
+	}
+}
+

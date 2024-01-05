@@ -1,0 +1,12 @@
+package come.test.question;
+
+
+
+public class Q001 {
+
+	public static void main(String[] args)  {
+		
+		
+	}
+	
+}
