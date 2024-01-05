@@ -18,7 +18,7 @@ public class Ex19_Method {
 		//4! =  4 * 3 * 2 * 1 = 24 
 		// 예제 ) 요구사항) 팩토리얼 메서드를 구현하시오
 		int n = 4;
-		int result = factorial(n);
+		int result = factorial(n); //factorial 블럭 후 F3 누르면 선언된 위치로 이동
 		printFactorial(n, result);
 		
 		// 이클립스 기능으로 메서드 작성 
@@ -27,8 +27,28 @@ public class Ex19_Method {
 		
 		printNumber();
 		
+		//m3 메서드 만들기
+		//m3(n); 후 ctrl + 1 누르면 create 나옴 
+		m3(n);
+		result = m4(n);	
+		
+		
 		
 	}//main
+
+
+
+	private static int m4(int n) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+	private static void m3(int n) {
+		// TODO Auto-generated method stub
+		
+	}
 
 
 
