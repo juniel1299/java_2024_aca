@@ -15,7 +15,7 @@ public class Q046 {
 		String kor = ""; // 한글 받아오기
 		int num = 0; //입력한 숫자 받아서 switch 구문에 넣음
 		
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 10; i++) { 
 			System.out.print("숫자: ");
 			num = Scan.nextInt();
 		

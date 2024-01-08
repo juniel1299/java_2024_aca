@@ -17,7 +17,7 @@ public static void main(String[] args) {
 	int odd = 0;
 	int even = 0;
 	int total = 0;
-	
+	String number =""; //마지막 출력때 식 만들기
 	for(int num=0; num<100; num++) {
 		System.out.print("숫자:");
 		num = Scan.nextInt();
@@ -36,13 +36,12 @@ public static void main(String[] args) {
 		if(total > 100) {
 			break;
 		}
-		
+
 				}
-	System.out.printf("%d ",even);
-	System.out.printf("%d",odd);
-	System.out.printf(" = %d",total);
-	//main
-	}
+	System.out.printf(" %d ",even);
+	System.out.printf(" %d",odd);
+	System.out.printf("= %d",total);
+}//main
 
 
 }
