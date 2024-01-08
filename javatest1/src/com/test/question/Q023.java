@@ -23,7 +23,7 @@ public static void main(String[] args) {
 	long daughterTotal;
 	Scanner scan = new Scanner(System.in);
 	
-	Calendar old = Calendar.getInstance();
+
 	
 	System.out.print("아빠 생일(년): ");
 	dadYear = scan.nextInt();

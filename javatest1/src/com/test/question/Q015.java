@@ -17,9 +17,10 @@ public static void main(String[] args) {
 	//매개변수 메서드 호출
 	//결과 출력
 	Scanner Scan = new Scanner(System.in);
-	
+	//날씨 
 	int sunny = 0;
 	int foggy = 0;
+	//총합
 	int total = 0;
 	
 	System.out.print("맑은 날: ");
@@ -42,9 +43,9 @@ private static int getApple(int sunny, int foggy) {
 	int total = 0; // 총 사과 개수
 	int height = 0; //높이
 	
-	height = (sunny * 5 + foggy * 2);
+	height = (sunny * 5 + foggy * 2); //자란 길이
 	
-	total = height >= 100 ? (height - 100) / 10 : 0 ;
+	total = height >= 100 ? (height - 100) / 10 : 0 ; //1m 이후 10부터 사과 자람 
 	
 	
 	return total;

@@ -12,6 +12,8 @@ public static void main(String[] args) {
 	//메서드 선언 반복
 	//호출 
 	
+	
+	//메서드 호출
 	sum(10);
 	sum(10, 20);
 	sum(10, 20, 30);
