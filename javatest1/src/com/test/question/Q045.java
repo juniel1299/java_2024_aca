@@ -20,15 +20,15 @@ public static void main(String[] args) {
 	int num = 0;
 	System.out.print("최대 숫자: ");
 	num = Scan.nextInt();
-	for(int i=0; i<1000; i++) {
+	for(int i=1; i<1000; i++) {
 		if(Integer.parseInt(num3) == i) {
 			System.out.print(" 짝 ");
-		}else if (Integer.parseInt(num6 ) == i ) {
+		}else if (Integer.parseInt(num6) == i ) {
 			System.out.print(" 짝 ");
 		}else if (Integer.parseInt(num9) == i ) {
 			System.out.print(" 짝 ");
 		}else {
-			System.out.print( i );
+			System.out.printf(" %d ",i);
 		}
 		
 	
