@@ -18,20 +18,25 @@ public static void main(String[] args) {
 	int startNumber = 0; //시작 숫자
 	int endNumber = 0; //종료숫자
 	int sum = 0; //합계
+	int evenSum = 0;
+	int oddSum = 0;
 	System.out.print("시작 숫자: ");
 	startNumber = scan.nextInt();
 	System.out.print("종료 숫자: ");
 	endNumber = scan.nextInt();
 	for(int i =startNumber; i<=endNumber; i++) {
-		
 		if(i%2 ==0) {
 			System.out.printf(" %d",-i);
+			evenSum-= i;
 		}else if(i%2==1) {
 			System.out.printf(" + %d",+i);
+			oddSum+=i;
 		}
-		sum =i;
 		
-	}System.out.printf("=%d",sum);
+		
+	}		sum = evenSum + oddSum;
+
+	System.out.printf("=%d",sum);
 	}
 	
 }//main 
