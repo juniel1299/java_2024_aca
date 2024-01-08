@@ -15,9 +15,98 @@ public static void main(String[] args) {
 	  }
 	 }
 	 */
-	m1();
+	//m1();
+	//m2();
+	//m3();
+	m4();
 	
 }//main
+
+private static void m4() {
+	// TODO Auto-generated method stub
+	
+	//별찍기
+	
+	for(int i=0; i<5; i++) {
+		for(int j=0; j<5; j++) {
+		
+			System.out.print("*");
+
+	
+	}
+		System.out.println();
+	}
+	System.out.println();
+
+	//별찍기 2 
+	for(int i=0; i<5; i++) {
+		for(int j=i; j<5; j++) {
+		
+			System.out.print("*");
+
+	
+	}
+		System.out.println();
+	}
+	System.out.println();
+
+	//별찍기 3
+	for(int i=0; i<5; i++) {
+		for(int j=0; j<=i; j++) {
+		
+			System.out.print("*");
+
+	
+	}
+		System.out.println();
+	}
+	System.out.println();
+	
+
+}
+
+private static void m3() {
+	// TODO Auto-generated method stub
+	
+	for(int i=0; i<10; i++) {
+		
+		for(int j=0; j<10; j++) {
+			if(i ==5 ||j==5) {
+				break; //continue
+			}
+			
+			System.out.printf("i: %d, j: %d\n",i,j);
+		}
+	
+	}
+	
+	
+	
+}
+
+private static void m2() {
+	// TODO Auto-generated method stub
+	
+	
+	
+
+	
+	
+	for(int i=2; i<10; i++) {
+		
+		System.out.println("=============");
+		System.out.printf(" %d단\n",i);
+		System.out.println("=============");
+		
+		
+
+		for(int j=1; j<10; j++) {
+			System.out.printf("%d * %d = %2d\n",j, i, j*i);
+
+
+		}
+			System.out.println();}
+}
 
 private static void m1() {
 	// TODO Auto-generated method stub
@@ -70,6 +159,7 @@ private static void m1() {
 	*/
 	
 	//아파트
+	
 	/*
 	for(단지) {
 		for(동) {
