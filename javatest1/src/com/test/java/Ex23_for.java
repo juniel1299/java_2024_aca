@@ -24,7 +24,8 @@ public class Ex23_for {
 		//m8();
 		//m9();
 		//m10();
-		m11();
+		//m11();
+		m12();
 
 		/*
 		 * hello(); hello(); hello(); hello(); hello();
@@ -34,6 +35,20 @@ public class Ex23_for {
 
 	
 	
+	private static void m12() {
+		// TODO Auto-generated method stub
+		//1 + 2 + 3 = 6 출력시
+		int sum = 0;
+		
+		for (int i=1; i<=3; i++ ) {
+			System.out.print(i + " + ");
+			sum += i;
+		}
+		System.out.println("\b\b= " + sum);
+	}
+
+
+
 	private static void m11() {
 		// TODO Auto-generated method stub
 		
