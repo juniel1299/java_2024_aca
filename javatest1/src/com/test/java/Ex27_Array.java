@@ -1,6 +1,5 @@
 package com.test.java;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Calendar;
 
@@ -21,8 +20,104 @@ public static void main(String[] args) {
 	//m8();
 	//m9();
 	//m10();
-	m11();
+	//m11();
+	m12();
 }//main
+
+private static void m12() {
+	// TODO Auto-generated method stub
+	
+	//정렬
+	// - 크기 비교 후 > 재배치 
+	
+	//1. 오름차순
+	//a. 숫자 : 작은수 > 큰수
+	//b. 문자열 : 문자코드값 순
+	//c. 날짜시간 : 과거 > 미래
+	
+	
+	
+	
+	
+	
+	//2. 내림차순
+	//a. 숫자 : 큰수 > 작은수
+	//b. 문자열 : 문자코드값 순
+	//c. 날짜시간 : 미래 > 과거
+	
+	//정렬구현
+	//1. 직접 구현 > 정렬 알고리즘
+	//2. JDK 구현된 기능
+	//3. 
+	
+	//버블정렬 + swap 
+	
+	//swap > 두 공간의 데이터를 서로 바꾸는 작업
+	// 빈 공간이 필요함 (3 공간 다 자료형이 모두 같아야함) 
+	int a = 10;
+	int b =5;
+	
+	int temp;
+	
+	temp = a;
+	a = b;
+	b = temp;
+	
+	System.out.println(a);
+	System.out.println(b);
+	
+	
+	/*
+	int[] nums = {5,1,4,2};
+	
+	System.out.print(Arrays.toString(nums));
+	
+	for(int i=0; i<nums.length-1; i++) {//사이클 (0123)
+		for(int j=0; j<nums.length-i; j++) {
+			
+			//오름차순
+			if(nums[j] > nums[j+1]) {
+				temp = nums[j];
+				nums[j] = nums[j+1];
+				nums[j+1] = temp;
+			}
+		}
+	}
+	
+	
+	System.out.println(Arrays.toString(nums));
+	 */
+	
+	
+	
+	String[] names = {"홍길동","아무개","테스트","유재석","강아지","고양이"
+			,"도깨비","박명수","조세호","병아리"};
+	
+	
+	for(int i=0; i<names.length-1; i++) {
+		for(int j=0; j<names.length-1-i; j++) {
+			if(names[j].compareTo(names[j+1])>0) {
+				String temp2 = names[j];
+				names[j] = names[j+1];
+				names[j+1] = temp2;
+			}
+		}
+	}
+	System.out.println(Arrays.toString(names));
+	
+	/*
+	String name1= "홍길동";
+	String name2 = "홍길순";
+	System.out.println(name1.compareTo(name2));
+	
+	
+	
+	System.out.println((int)'홍');
+	System.out.println((int)'아');
+	
+	
+	*/
+}
 
 private static void m11() {
 	// TODO Auto-generated method stub

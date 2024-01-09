@@ -41,7 +41,7 @@ public class Q045 {
 															// 짝
 				time += "짝"; // 짝이 2번 ~ 3번 갈 때 여기서 생성함
 			}
-			number /= 10; // number = number / 10 , ex) 80 / 10 = 70 , ex)
+			number /= 10; // 짝 2번 이상이려면 2자리 이상이어야 하므로
 		}
 		if (time.equals("")) { // 만약 빈 문자열이면 그냥 숫자를 반환
 			return i + "";
