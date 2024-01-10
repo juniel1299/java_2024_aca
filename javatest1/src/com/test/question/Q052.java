@@ -18,16 +18,23 @@ public static void main(String[] args) {
 		for(int j=0; j<line-i; j++) { //공백 생성 , ex) 5 입력시 j=0부터 j<5 , j=1 j<5-1 = 4 , j=2 j<5-2 = 3  
 			System.out.print(" ");
 		}
+		
+		
 		char alphabet = 'a'; //처음에 출력 할 알파벳 선언 
 		
-		for(int j=0; j<i*2/2; j++) { //알파벳 출력 + 유니코드 숫자 1개 증가 
+		for(int j=0; j<i; j++) { //알파벳 출력 + 유니코드 숫자 1개 증가 
 			System.out.print(alphabet);
 			alphabet++; // 유니코드 숫자가 하나씩 증가 
 		}
-		for(int j=0; j<i*2/2; j++) { 
+		
+		
+		for(int j=0; j<i; j++) { 
 			alphabet--; //위에서 중첩된 증가식에서 1씩 빼 cba 출력 
 			System.out.print(alphabet); //
 		}
+		
+		
+		
 		System.out.println();
 	}
 	

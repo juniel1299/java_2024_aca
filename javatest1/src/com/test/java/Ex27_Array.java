@@ -2,9 +2,7 @@ package com.test.java;
 
 import java.util.Arrays;
 import java.util.Calendar;
-
-import javax.naming.ldap.SortControl;
-import javax.swing.RowSorter;
+import java.util.Scanner;
 
 public class Ex27_Array {
 	public static void main(String[] args) {
@@ -29,9 +27,57 @@ public class Ex27_Array {
 		//m14();
 		//m15();
 		//m16();
-		m17();
-		
+		//m17();
+		//m18();
+		//m19();
+		m20();
 	}// main
+
+	private static void m20() { //2차원 배열 문제
+		// TODO Auto-generated method stub
+		int[][] nums = new int[5][5];
+		
+		int n=1;
+		//2차원 배열 값 넣기 , 
+		for(int i=0; i<5; i++) {
+			for(int j=4; j>=0; j--) {
+				nums[i][j] = n;
+				n++;
+			}
+			System.out.println();
+		}
+		
+		for(int i=0; i<5; i++) {
+			for(int j=0; j<5; j++) {
+				System.out.printf("%3d",nums[i][j]);
+			}
+		System.out.println();
+		}
+	}
+
+	private static void m19() { //69번 문제
+		// TODO Auto-generated method stub
+		//***배열의 길이는 불변이다.
+		//한번 만들어진 배열의 방은 늘리거나 삭제할 수 없다.
+		
+		//int[] kor = new int[400]; //여유있게 늘려 놓아야 함 //정적할당
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.print("학생수: ");
+		int length = scan.nextInt();
+		
+		int[] kor = new int[length]; //동적할당
+		System.out.println(kor.length);
+	}
+
+	private static void m18() { //문제 66번 
+		// TODO Auto-generated method stub
+		
+		for(int i=0; i<10; i++) {
+			System.out.println((int)(Math.random()* 100) + 1);
+		}
+	}
 
 	private static void m17() {
 		// TODO Auto-generated method stub
