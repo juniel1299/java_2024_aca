@@ -25,8 +25,186 @@ public class Ex27_Array {
 		// m10();
 		// m11();
 		// m12();
-		m13();
+		// m13();
+		//m14();
+		//m15();
+		//m16();
+		m17();
+		
 	}// main
+
+	private static void m17() {
+		// TODO Auto-generated method stub
+		
+		//초기화 리스트
+		
+		int[] nums1 = {10,20,30};
+		
+		int[][] nums2 = {
+				{10,20,30},
+				{10,20,30}
+				};
+		
+		int[][][] nums3 = {
+				{
+					{10,20,30},
+					{40,50,60},
+					{70,80,90}
+				}
+				};
+		//jagged Array , 비정형 배열, 불규칙 배열 
+		int[][] nums4 = {
+				{10,20,30},
+				{40,50},
+				{10,20,30,40}
+				};
+	
+		
+		//jagged array 탐색
+		for(int i=0; i<nums4.length; i++) {
+			for(int j=0; j<nums4[i].length; j++) {
+				System.out.printf("%5d",nums4[i][j]);
+			}
+			System.out.println();
+		}
+	
+	}
+
+	private static void m16() {
+		// TODO Auto-generated method stub
+		//배열의 차원
+		// 1차원 배열, n차원 배열 
+		
+		//1차원 배열
+		int[] nums1 = new int[3];
+		nums1[0] = 10;
+		nums1[1] = 20;
+		nums1[2] = 20;
+		
+		System.out.println(Arrays.toString(nums1));
+		//2차원 배열
+		
+		//nums2 자료형 > int[][] > int 2차원 배열 
+		//nums2[0] 자료형 > int[] > int 1차원 배열
+		//nums2[0][0] 자료형 > int
+		
+		int[][] nums2 = new int[2][3];
+		nums2[0][0] = 10;
+		nums2[0][1] = 20;
+		nums2[0][2] = 30;
+		nums2[1][0] = 40;
+		nums2[1][1] = 50;
+		nums2[1][2] = 60;
+		
+		System.out.println(Arrays.deepToString(nums2));
+		
+		
+		System.out.println(nums2.length); //층 수 (세로) 
+		
+		System.out.println(nums2[0].length); //가로 [1차원배열]
+		
+		//2차원 배열 탐색
+		
+		
+		
+		for(int i=0; i<nums2.length; i++) {
+			for(int j=0; j<nums2[0].length; j++) {
+				System.out.print(nums2[i][j] + "\t");
+			}
+			System.out.println();
+		}
+		//3차원 배열
+		int[][][] nums3 = new int[2][2][3];
+		nums3[0][0][0] = 10;
+		nums3[0][0][1] = 20;
+		nums3[0][0][2] = 30;
+		
+		nums3[0][1][0] = 40;
+		nums3[0][1][1] = 50;
+		nums3[0][1][2] = 60;
+		
+		nums3[1][0][0] = 70;
+		nums3[1][0][1] = 80;
+		nums3[1][0][2] = 90;
+		
+		nums3[1][1][0] = 100;
+		nums3[1][1][1] = 110;
+		nums3[1][1][2] = 120;
+		
+		//3차원 배열 탐색
+		for(int i=0; i<nums3.length; i++) {
+			for(int j=0; j<nums3[0].length; j++) {
+				for(int k=0; k<nums3[0][0].length; k++) {
+					
+					System.out.printf("%5d",nums3[i][j][k]);
+				}
+			System.out.println();
+			}
+		System.out.println();
+		}
+		
+	}
+
+	private static void m15() {
+		// TODO Auto-generated method stub
+		//배열의 요소 삭제(deletion)
+		// left Shift > 요소들이 왼쪽으로 이동
+		// *** 삭제 이후의 요소들이 인덱스가 변경된다.
+		
+		int[] nums = { 1, 2, 3, 4, 5 };
+
+		int index = 1;
+		
+		System.out.println(Arrays.toString(nums));
+		for(int i=index; i<=nums.length-2; i++) { //왼쪽으로 이동 
+			nums[i] = nums[i+1]; 
+		}
+		nums[nums.length-1] = 0; //배열 마지막을 0으로
+		System.out.println(Arrays.toString(nums));
+	 
+	
+	}
+
+	private static void m14() {
+		// TODO Auto-generated method stub
+		// 배열 조작
+		// - 배열의 요소 삽입
+		// 비용 발생
+		
+		
+		// 삽입(insertion)
+		//right Shift (오른쪽으로 이동)
+		//*** 삽입 이후의 요소들이 인덱스가 변경된다.
+		int[] nums = { 1, 2, 3, 4, 5 };
+
+		int index = 1;
+
+		int value = 9;
+		
+		System.out.println("nums[0] = "+nums[0]);
+		System.out.println("nums[3] = "+nums[3]);
+
+		System.out.println(Arrays.toString(nums));
+		for (int i = nums.length - 2; i >= index; i--) {
+			// System.out.println(i);
+
+			nums[i + 1] = nums[i];
+			System.out.println(Arrays.toString(nums));
+		}
+		nums[index] = value;
+		System.out.println(Arrays.toString(nums));
+		
+		
+
+		
+		System.out.println("nums[0] = "+nums[0]);
+		System.out.println("nums[3] = "+nums[3]);
+
+		
+		
+		
+		
+	}
 
 	private static void m13() {
 		// TODO Auto-generated method stub
@@ -57,18 +235,13 @@ public class Ex27_Array {
 				}
 			}
 		}
-		//Quick Sort 사용
+		// Quick Sort 사용
 		Arrays.sort(nums);
 		System.out.println(Arrays.toString(nums));
-		
-		
-		
+
 		Arrays.sort(names);
 		System.out.println(Arrays.toString(names));
-		
-		
-		
-		
+
 	}
 
 	private static void m12() {
