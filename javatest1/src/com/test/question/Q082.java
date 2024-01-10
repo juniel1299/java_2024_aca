@@ -8,17 +8,25 @@ public static void main(String[] args) {
 	Scanner scan = new Scanner(System.in);
 	
 	String num = "";
+	String result = "";
+	int sum = 0;
 	
 	System.out.print("숫자: ");
 	num = scan.nextLine();
 	
-	int sum = 0; 
-	for(int i=0; i>=num.length()-1; i++) {
-		sum += num.indexOf(i);
 	
-	}	System.out.println(sum);
+	for(int i=0; i<num.length(); i++) {
+		sum += Integer.parseInt(num.substring(i, i+1));
+		result += num.substring(i, i+1);
+	
+		if(i<num.length()-1) {
+			result += " + ";
+	}	
+}	
 	
 	
+	System.out.printf("%s = %d\n ",result,sum);
+	scan.close();
 }//main
 
 
