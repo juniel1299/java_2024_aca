@@ -20,9 +20,42 @@ public static void main(String[] args) {
 	 	4. (default)
 	 	
 	 */
+	// private 를 사용하면 다른 파일에서 보여지지 않음 . 
+	//public을 사용해야 가능 
+
+//	Book b1 = new Book();
+//	
+//	b1.check();
+//	
+//	b1.a = 100;
+//	//b1.b = 200;
+//	
+//	b1.check();
+//	
+	
+	
+	
+	
 	Book b1 = new Book();
 	
-	b1.check();
+	b1.title = "자바 개발서";
+	//b1.price = 25000;
+	b1.aaa(25000);	
+	
+	System.out.println(b1.title);
+	//System.out.println(b1.price);
+	System.out.println(b1.bbb());
+	
+	Book b2 = new Book();
+	
+	b2.title = "코딩 테스트 문제집";
+	b2.aaa(100000);
+	b2.setPublisher("영진출판사");
+	System.out.println(b2.title);
+	System.out.println(b2.bbb());
+	System.out.println(b2.getPublisher());
+	
+	
 	
 }//main 
 }
