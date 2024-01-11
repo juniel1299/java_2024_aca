@@ -23,7 +23,28 @@ public class Book {
 	private String publisher;
 	private String author;
 	
+	private int discount;
+	private String ISBN;
+	private int pages;
 	
+	public int getDiscount() {
+		return discount;
+	}
+	public void setDiscount(int discount) {
+		this.discount = discount;
+	}
+	public String getISBN() {
+		return ISBN;
+	}
+	public void setISBN(String iSBN) {
+		ISBN = iSBN;
+	}
+	public int getPages() {
+		return pages;
+	}
+	public void setPages(int pages) {
+		this.pages = pages;
+	}
 	//외부 > (값) > 내부
 	//쓰기 작업
 	//Setter ,Set Method
