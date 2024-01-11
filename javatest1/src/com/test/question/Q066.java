@@ -1,5 +1,7 @@
 package com.test.question;
 
+import java.util.Arrays;
+
 public class Q066 {
 public static void main(String[] args) {
 	
@@ -20,11 +22,13 @@ for(int i=0; i<list.length; i++) {
 temp ="[ ";
 for(int i=0; i<list.length; i++) {
 	temp += list[i] + ", ";
-	
+	Arrays.sort(list);
 }
+System.out.println(Arrays.toString(list));	
 temp += " ]";
-System.out.println(temp);
 
+
+//System.out.println(temp);
 
 }//main
 }
