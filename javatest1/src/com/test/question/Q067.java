@@ -3,11 +3,11 @@ package com.test.question;
 public class Q067 {
 public static void main(String[] args) {
 
-	int[] num = {
+	int[] num = {};
 	
 	
 	for(int i=0; i<10; i++) {
-		for()
+		//for()
 		System.out.print("삽입위치: ");
 	}
 	

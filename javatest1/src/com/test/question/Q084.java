@@ -11,7 +11,8 @@ for(int i =0; i<txt.length(); i++) {
 	index = txt.indexOf("길동",i); //.가 어느 위치에 있는지 확인 
 	
 	if(index >=0) {
-		name = index; //13번째 길동 인식
+	
+		sum = index; //13번째 길동 인식
 	}
 
 }
