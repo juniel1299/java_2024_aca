@@ -17,8 +17,8 @@ public class Ex35_Class {
 
 		e2.setSuperior(e1);
 
-		System.out.println(e1.getName()); // e1 값을 받아옴
-		System.out.println(e2.getSuperior().getName()); // e2에게 물어보고 e1값 받음
+//		System.out.println(e1.getName()); // e1 값을 받아옴
+//		System.out.println(e2.getSuperior().getName()); // e2에게 물어보고 e1값 받음
 
 		Parent father = new Parent();
 		father.setName("홍길동");
@@ -38,15 +38,30 @@ public class Ex35_Class {
 		p1.setName("홍길동");
 		p1.setAge(20);
 		p1.setAddress("서울시 강남구 역삼동");	
-		p1.setNick("홀쭉이");
+		//p1.setNick("홀쭉이");
 		
+		
+//		String[] nick = new String[3];
+//		
+//		nick[0] = "홀쭉이";
+//		nick[1] = "젓가락";
+//		nick[2] = "철사";
+		
+		
+//		p1.setNick(nick); //문자열 배열
 		
 		//컴파일러가 System.out.println( p1.toString()); 으로 바꿔서 출력해줌 
 		// System.out.println(p1); 
 		
+		p1.addNick("홀쭉이");
+		p1.addNick("젓가락");
+		p1.addNick("철사");
+		
 		System.out.println(p1.info());
+		 
 		
-		
+	System.out.println(p1.getNick(1));
+	
 	
 	
 	}// main
