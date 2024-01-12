@@ -80,3 +80,12 @@ final class FinalParent {
 //		return "나이";
 //	}
 //}
+
+
+// 난수 생성
+// 숫자만 됨 
+// 문자열을 하고 싶으면 배열 이용 String[] color={"빨강","노랑","파랑","보라"};
+//난수를 방번호로 씀 -> String[random] 
+
+//String[] color={"빨강","노랑","파랑","보라"};
+// System.out.println(color[(int)(Math.random() * color.length)]);
