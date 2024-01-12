@@ -1,5 +1,7 @@
 package com.test.question.obj;
 
+import java.util.Arrays;
+
 public class Book {
 
 	private String title;
@@ -10,9 +12,18 @@ public class Book {
 	private String isbn;
 	private int page;
 	
+
 	
-	public String getPubYear() {
-		return pubYear;
+	public String info() {
+		String temp = "";
+		temp += "제목: " + title + "\r\n";
+		temp += "가격: " + price +  "원\r\n";
+		temp += "저자: " + author + "\r\n";
+		temp += "출판사: " + publisher + "년\r\n";
+		temp += "발행년도: " + pubYear + "\r\n";
+		temp += "ISBN: " + isbn + "\r\n";
+		temp += "페이지: " + page + "장\r\n";
+		return temp;
 	}
 	public void setPublisher(String publisher) {
 		this.publisher = publisher;
@@ -49,5 +60,5 @@ public class Book {
 	}
 	
 	
-	
-}
+}	
+

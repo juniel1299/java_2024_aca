@@ -26,11 +26,11 @@ public static void main(String[] args) {
 	
 	printAns(num);
 	
-	for(int i =0; i<num.length-1; i+=2) {
+	for(int i =0; i<num.length-1; i+=2) { //배열 앞 뒤 더해서 한칸 앞으로
 		copy[i/2] = num[i] + num[i+1];
 	}
 	
-	if(num.length%2 ==1) {
+	if(num.length%2 ==1) { // 입력받은 배열이 홀수이면 한자리 앞에 놓음  
 		copy[copy.length-1] = num[num.length-1];
 		
 	}
