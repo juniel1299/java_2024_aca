@@ -1,5 +1,5 @@
 package com.test.question;
-
+//보류
 import java.util.Scanner;
 //1,000,000 -> 0,123,456
 public class Q086 {

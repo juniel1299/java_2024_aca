@@ -19,11 +19,11 @@ public static void main(String[] args) {
 		file = scan.nextLine();
 		
 		index =file.lastIndexOf("."); //.가 어느 위치에 있는지 확인 
-		file = file.toLowerCase();
+		file = file.toLowerCase(); //대문자로 들어 올 수 있기 때문에 모두 소문자로 변경
 		
-		if(file.substring(index).equals(".mp3")) {
-			mp3 ++;
-		}else if(file.substring(index).equals(".jpg")){
+		if(file.substring(index).equals(".mp3")) { //file 문자열에 substring(index) .부터 검색하게 지정
+			mp3 ++; //만약 .mp3가 존재한다면 mp3를  1증가 
+		}else if(file.substring(index).equals(".jpg")){ //위와 동일
 			jpg++;
 		}else if(file.substring(index).equals(".java")) {
 			java++;
@@ -34,7 +34,7 @@ public static void main(String[] args) {
 		}
 		
 	}
-	
+	//합계 출력
 	System.out.printf("mp3: %d개\n",mp3);
 	System.out.printf("jpg: %d개\n",jpg);
 	System.out.printf("java: %d개\n",java);

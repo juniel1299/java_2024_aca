@@ -8,7 +8,7 @@ public static void main(String[] args) {
 	
 	for(int i = 0; i<num.length; i++) {
 		for(int j=0; j<num[0].length; j++) {
-			num[j][i] = n;
+			num[j][i] = n; //첫번째 배열에 j를 받아 방향 전환 (위에서 밑으로 가도록 함)
 			n++;
 		}
 	}
