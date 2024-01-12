@@ -32,5 +32,25 @@ public class Monitor {
 		}else {
 			return 3;
 		}
+	
+	
+	
+	
 	}
+public String tostring() {
+	return String.format("%s[%,d원,%d인치]"
+			,this.model
+			,this.price
+			,this.size);
+}
+	//우클릭 > 소스 > 필드에서 만들어도 됨 
+//	public  Monitor(String model, int size, int price) {
+//		//super();
+//		this.model = model;
+//		this.size = size;
+//		this.price = price;
+//		
+//	}
+
+
 }
