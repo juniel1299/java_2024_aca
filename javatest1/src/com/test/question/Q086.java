@@ -7,17 +7,20 @@ public static void main(String[] args) {
 	
 	Scanner scan = new Scanner(System.in);
 	String num = "";
+	String result = "";
+	
 	
 	System.out.print("숫자: ");
 	num = scan.nextLine(); //문자열로 바꿔서 받음
 	
-	for(int i=0; i>=num.length(); i++) {
-		if(num.length() %3 ==0) {
-		System.out.print(",");
-		
-		}
+	while(num.length() >= 3) {
+		result = "," + num.substring(num.length()-3, num.length()) + result;
+		num = num.substring(0, num.length()-3);
 	}
-	System.out.printf("%s\n",num);
+	
+	System.out.println("결과 : " + num + result);
+	
+	scan.close();
 }//main
 
 

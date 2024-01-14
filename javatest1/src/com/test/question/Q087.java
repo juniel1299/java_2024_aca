@@ -13,11 +13,17 @@ public static void main(String[] args) {
 	pluseng = scan.nextLine();
 	int index = 0;
 	for(int i=0; i<pluseng.length(); i++) {
-		index = pluseng.indexOf(index >= (char) 95 || index <= (char) 122);
 		
+		char c = pluseng.charAt(i);
+		
+		if(c>= 'A' && c <= 'Z' && i !=0) {
+			
+			System.out.print(" ");
+		}
+		System.out.print(c);
 		
 	}
-	System.out.print(index);
+	scan.close();
 	
 
 
