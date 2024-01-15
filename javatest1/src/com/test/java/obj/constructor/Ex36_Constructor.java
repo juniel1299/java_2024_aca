@@ -134,6 +134,29 @@ class Cup {
 	
 }
 
+class Mouse {
+	//클래스 멤버
+	private int a;
+	private int b;
+	//객체 (멤버)생성자 , 가장 먼저 생성됨 (메모리 상에 실제 없음), 초기화 안 함 > 객체 내부를 초기화 하는 것이기 때문에.
+	private static int c; 
+	public Mouse(int a, int b) {
+		super();
+		this.a = a;
+		this.b = b;
+	} 
+	//정적 생성자 (static) > 정적 멤버만을 초기화
+	//매개변수 없음
+	//정적 생성자는 직접 호출이 불가능
+	//자바가 호출함
+	static {
+		Mouse.c = 0;
+	}
+	
+	
+	
+}
+
 
 
 // new box(); 에서 new(객체생성연산자)가 먼저 실행 -> 메모리에 실제 생성 -> new가 Heap에 size와 price 변수 생성
