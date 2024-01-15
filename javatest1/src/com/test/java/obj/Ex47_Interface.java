@@ -18,7 +18,19 @@ public static void main(String[] args) {
 	 
 	 */
 	
-	Phone p1 = new Phone();
+	Iphone14 p1 = new Iphone14();
+	
+	p1.powerOn();
+	p1.call();
+	p1.powerOff();
+	
+	System.out.println();
+	
+	S23 p2 = new S23();
+	
+	p2.powerOn();
+	p2.call();
+	p2.powerOff();
 	
 	
 	
@@ -48,6 +60,46 @@ interface Phone{
 	void call();
 	
 }
-class aa extends Phone{
+class Iphone14 implements Phone{ //interface 에서는 implements 를 통해 상속해야 함  
+	
+	public void powerOn() {
+		System.out.println("전원 on");
+		
+	}
+
+	@Override
+	public void powerOff() {
+		System.out.println("전원 off");
+		
+	}
+
+	@Override
+	public void call() {
+
+		System.out.println("전화 걸기");
+	}
+	
+	
+}
+
+class S23 implements Phone{
+
+	@Override
+	public void powerOn() {
+		// TODO Auto-generated method stub
+		System.out.println("전화를 켭니다.");
+	}
+
+	@Override
+	public void powerOff() {
+		// TODO Auto-generated method stub
+		System.out.println("전화를 끕니다.");
+	}
+
+	@Override
+	public void call() {
+		// TODO Auto-generated method stub
+		System.out.println("통화를 겁니다.");
+	}
 	
 }
