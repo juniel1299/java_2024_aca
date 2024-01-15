@@ -142,6 +142,7 @@ public static void main(String[] args) {
 	System.out.printf("이름: %s 국어: %d 영어: %d 수학: %d",student.name,student.kor,student.eng,student.math);
 
 
+	
 
 }//main
 

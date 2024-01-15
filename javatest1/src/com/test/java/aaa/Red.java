@@ -5,6 +5,7 @@ public class Red {
 	public int a;
 	private int b;
 	int c;
+	protected int d;
 	
 	
 	
