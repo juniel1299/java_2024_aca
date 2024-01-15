@@ -10,7 +10,7 @@ int[] list = new int[6];
 String temp = "";
 
 for(int i=0; i<list.length; i++) {
-	list[i] = (int)(Math.random()*44+1);
+	list[i] = (int)(Math.random()*45+1);
 	
 	for(int j=0; j<i; j++) {
 		if(list[j] ==list[i]) {
