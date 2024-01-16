@@ -49,9 +49,25 @@ public class Ex54_ArrayList {
 		//m2();
 		//m3();
 		//m4();
-		m5();
+		//m5();
+		m6();
 		
 	}// main
+
+	private static void m6() {
+		
+		ArrayList<String> names = new ArrayList<String>();
+		
+		names.add("강아지");
+		names.add("고양이");
+		names.add("참새");
+		
+		//dump
+		//Arrays.toString(배열)
+		//toString() 재정의  
+		System.out.println(names);
+		
+	}
 
 	private static void m5() {
 		
@@ -323,5 +339,73 @@ class Cup{
 	@Override
 	public String toString() {
 		return "Cup [color=" + color + ", price=" + price + "]";
+	}
+}
+
+class Parent{
+	
+	private int a;
+	private int b;
+	
+//	public Parent() {
+//		this.a = 0;
+//		this.b = 0;
+//	}
+	
+	public Parent(int a, int b) {
+		this.a = a;
+		this.b = b;
+	}
+
+	@Override
+	public String toString() {
+		return "Parent [a=" + a + ", b=" + b + "]";
+	}
+	
+	public void hello() {
+		System.out.println("부모 인사");
+	}
+	
+	
+}
+
+class Child extends Parent{
+	private int c;
+	private int d;
+	
+//	public Child() {
+//		this.c = 0;
+//		this.d = 0;
+//	}
+	
+	//부모의 기본 생성자를 호출함 -> 기본 생성자 주석처리하면 에러가 발생 
+	//부모 생성자를 호출할 때 기본 생성자가 아닌 본인이 원하는 부모 생성자 호출하기 위해선 super 사용 
+	//부모 생성자를 명시적으로 호출 -> super();
+	//부모 생성자의 기본값을 호출 할 땐 super();
+	//특정 생성자를 부를 땐 숫자 대입해야함 
+	//컴파일러 자체에서 자동으로 super()를 넣어서 그럼 
+	public Child(int c, int d) { 
+		super(0,0);
+		this.c = c;
+		this.d = d;
+		
+		
+		//객체 접근 연산자
+		//1. this > 자기 자신
+		//2. super > 자기 부모 (상속하는 클래스)
+	}
+
+	@Override
+	public String toString() {
+		return "Child [c=" + c + ", d=" + d + "]";
+	}
+	
+	@Override
+	public void hello() {
+		System.out.println("자식 인사");
+	}
+	
+	public void temp() {
+		super.hello();
 	}
 }
