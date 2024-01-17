@@ -22,8 +22,6 @@ public class MyStack {
 		this.index++;
 		
 		return true;
-
-		
 	}
 
 
@@ -54,11 +52,11 @@ public class MyStack {
 		String item = this.list[0];
 		for (int i=0; i<this.list.length-2; i++) {
 			this.list[i] = this.list[i+1];
-			index--;
+			this.index++;
 		}
 		
-
 		return item;
+
 	}
 
 

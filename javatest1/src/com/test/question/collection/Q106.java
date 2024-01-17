@@ -13,12 +13,14 @@ public static void main(String[] args) {
 	stack.push("검정");
 
 	//읽기
+	System.out.println();
 	System.out.println(stack.pop());
 	System.out.println(stack.pop());
 	System.out.println(stack.pop());
 	System.out.println(stack.peek());
 	
 //	//개수
+	System.out.println();
 	System.out.println(stack.size());
 //
 //	//확인
