@@ -1,6 +1,7 @@
 package com.test.java.file;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Calendar;
 
 public class Ex58_file {
@@ -21,9 +22,81 @@ public static void main(String[] args) {
 	 */
 	//m1();
 	//m2();
+	//m3();
+	//m4();
+	//m5();
+	m6();
 	
 	
 }//main
+
+private static void m6() {
+	
+
+	String path = "C:\\class\\code\\java\\file\\score.txt";	
+	File file = new File(path);
+	if(file.exists()) {
+		
+		//보통 삭제 : 휴지통 폴더로 이동하기
+		//진짜 삭제 : Shift + del , 복구 불가 
+	file.delete();
+	}
+}
+
+private static void m5() {
+	
+	//파일 이동
+	//renameTo
+	String path = "C:\\class\\code\\java\\file\\score.txt";	
+	File file = new File(path);
+	
+	String path2 = "C:\\class\\code\\java\\move\\jumsu.txt";	
+	File file2 = new File(path2);
+	
+	boolean result = file.renameTo(file2); //앞에 있는 변수가 뒤에 있는 변수로 바뀜
+	System.out.println(result);
+	
+	
+}
+
+private static void m4() {
+	
+	//파일 이름 수정
+	//renameTo
+	String path = "C:\\class\\code\\java\\file\\score.txt";	
+	File file = new File(path);
+	
+	String path2 = "C:\\class\\code\\java\\file\\jumsu.txt";	
+	File file2 = new File(path2);
+	
+	boolean result = file.renameTo(file2); //앞에 있는 변수가 뒤에 있는 변수로 바뀜
+	System.out.println(result);
+}
+
+private static void m3() {
+	
+	//파일 조작 > 생성, 복사, 이동, 파일명 수정, 삭제 등 ...
+	
+	
+	String path = "C:\\class\\code\\java\\file\\score.txt";	
+	File file = new File(path);
+	
+	//생성
+	try {
+		boolean result = file.createNewFile();
+		System.out.println(result); //동일한 파일이 있으면 동작 안 함 false
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+	
+	
+	
+	
+	
+	
+}
 
 private static void m2() {
 	
