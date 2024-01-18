@@ -6,8 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="checkLeng"/>
 		<list key="findhistory">
+			<item value="checkLeng"/>
+			<item value="double"/>
+			<item value="checkL"/>
+			<item value="app"/>
+			<item value="to"/>
+			<item value="추가하기"/>
 			<item value="info"/>
 			<item value="package com.test.java.obj.constructor;"/>
 			<item value="System.out.println(&quot;c.Kotlin&quot;);//+5"/>
