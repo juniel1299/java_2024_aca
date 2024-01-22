@@ -20,8 +20,8 @@ public static void main(String[] args) {
 	File[] list1 = folder1.listFiles(); //폴더안에 존재하는 파일을 배열안에 정리
 	File[] list2 = folder2.listFiles(); //폴더안에 존재하는 파일을 배열안에 정리
 	
-	ArrayList<File> twice = new ArrayList<File>(); //겹치는 파일 ArrayList에 넣음
-	for(File file1 : list1) { //A폴더에 있는 파일 반복
+	ArrayList<File> twice = new ArrayList<File>(); //겹치는 파일 Arraylist에 넣음 
+		for(File file1 : list1) { //A폴더에 있는 파일 반복
 		
 	for(File file2 : list2) { //B폴더에 있는 파일 반복
 		if(file1.getName().equals(file2.getName())) { //만약 두 폴더에 파일 이름이 겹치면  

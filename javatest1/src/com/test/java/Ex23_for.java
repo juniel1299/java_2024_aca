@@ -17,7 +17,7 @@ public class Ex23_for {
 		// m1();
 		// m2();
 		//m3();
-		//m4();
+		m4();
 		//m5();
 		//m6();
 		//m7();
@@ -26,7 +26,7 @@ public class Ex23_for {
 		//m10();
 		//m11();
 		//m12();
-		m13();
+		//m13();
 
 		/*
 		 * hello(); hello(); hello(); hello(); hello();
