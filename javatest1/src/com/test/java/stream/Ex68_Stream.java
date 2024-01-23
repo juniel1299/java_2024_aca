@@ -10,14 +10,15 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.function.Predicate;
+import java.util.Optional;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-import com.test.data.Data;
+import javax.xml.crypto.Data;
+
 import com.test.data.Item;
-import com.test.data.User;
 import com.test.java.collection.Member;
+import com.test.java.obj.User;
 import com.test.util.Myutil;
 
 public class Ex68_Stream {
@@ -108,6 +109,17 @@ public static void main(String[] args) {
 	 - boolean noneMatch(Predicate) : 모든 요소가 조건을 불만족하는지
 	 
 	 
+	 집계 , Reduce
+	 - count()
+	 - max()
+	 - min()
+	 - sum()
+	 - avg()
+	 - 최종 파이프
+	 - 앞의 스트림의 요소를 취합해서 하나의 통계값을 생성
+	 
+	 
+	 
 	 */
 	
 	
@@ -119,7 +131,94 @@ public static void main(String[] args) {
 	//m6();
 	//m7();
 	//m8();
-	m9();
+	//m9();
+	m10();
+}
+
+private static void m10() {
+	// TODO Auto-generated method stub
+	
+	//count()
+	Data.getIntList().stream()
+	.count();
+	System.out.println(count);
+	
+	System.out.println(Data.getUserList().stream().filter(user -> user.getGender()==1).count());
+	System.out.println(Data.getUserList().stream().filter(user -> user.getGender()==2).count());
+	
+	
+	//max(),min()
+	List<Integer> nums = Data.getIntList();
+	
+	int max = -1; //nums 안의 모든 숫자 가장 작은 숫자 -1 
+	int min = 101; //nums 안의 모든 숫자 중 가장 큰 숫자+1
+	
+	for(int n: nums) {
+		if(n>max) {
+			max=n;
+			
+		}
+	
+	if(n<min) {
+		min = n;
+	}
+	}
+	System.out.println(max);
+	System.out.println(min);
+	
+	//Optional<Integer>
+	// Integer or int 타입과 동일한 자료형 
+	// 값형은 null을 가질 수 없다 
+	// 참조형은 null을 가질 수 있다.
+	// null을 가질 수 있는 int 
+	System.out.println(nums.stream().max((a,b) -> a - b)); //최대 값 리턴
+	
+	//nums.clear();
+	
+	Optional<Integer> result = nums.stream().max((a,b) -> a - b);
+	
+	System.out.println(result.get());
+	
+	Optional<User> user = Data.getUserList().stream().max((user1, user2)-> user1.getHeight() - user2.getHeight());
+	
+	System.out.println(user.get());
+	
+	
+	Optional<User> user3 = Data.getUserList().stream().min((user1, user2)-> user1.getHeight() - user2.getHeight());
+	
+	System.out.println(user3.get());
+	
+	//스트림 요소 타입 > 숫자 or 숫자 x
+	// count(),max(),min() -> Stream<Type> > 모든 자료형에 적용 가능함
+	
+	//스트림 요소 타입이 숫자일때만 가능 
+	//sum(),average() -> IntStream , DoubleStream -> 숫자 전용 스트림에서만 사용 가능
+	
+	
+	//nums.stream() ==Stream<Integer>
+	
+	System.out.println(nums.stream().mapToInt(n->n).sum()); //== IntStream
+	
+	
+	Optional avg = nums.stream().mapToInt(n->n).average();
+	
+	System.out.println(nums.stream().mapToInt(n->n).average());
+	
+	System.out.println(avg.getAsDouble);
+	
+	//남자 평균 키 
+	
+	Data.getUserList().stream()
+	.filter(u->u.getGender()==1)
+	.mapToInt(u -> u.getHeigth()
+	.average()
+	.getAsDouble();
+	
+	getAsDouble(Integer);
+
+	
+	
+	
 }
 
 private static void m9() {
