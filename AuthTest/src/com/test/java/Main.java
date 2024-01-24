@@ -2,6 +2,14 @@ package com.test.java;
 
 import java.util.Scanner;
 
+import com.test.java.adminboard.AdminBoard;
+import com.test.java.freeboard.FreeBoard;
+import com.test.java.member.Login;
+import com.test.java.member.Logout;
+import com.test.java.member.Member;
+import com.test.java.memberboard.MemberBoard;
+import com.test.java.view.View;
+
 public class Main {
 	public static void main(String[] args) {
 		
@@ -11,29 +19,27 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		while(loop) {
 			
-			System.out.println("==========================");
-			System.out.println("       당근 마켓 ");
-			System.out.println("==========================");
-			System.out.println("1. 로그인");
-			System.out.println("2. 로그아웃");
-			System.out.println("3. 자유게시판");
-			System.out.println("4. 회원게시판");
-			System.out.println("5. 관리자게시판");
-			System.out.println("0. 종료");
-			System.out.println("==========================");
-			System.out.print("선택(번호) : ");
+			View.mainmenu();
 			
 			String sel = scan.nextLine();
 			
 			if(sel.equals("1")) {
+				//로그인
+				Login.login();
 				
 			}else if(sel.equals("2")) {
-				
+				//로그아웃
+				Logout.logout();
 			}else if(sel.equals("3")) {
+				FreeBoard board = new FreeBoard();
+				board.list();
 				
 			}else if(sel.equals("4")) {
-				
+				MemberBoard board = new MemberBoard();
+				board.list();
 			}else if(sel.equals("5")) {
+				AdminBoard board = new AdminBoard();
+				board.list();
 				
 			}else {
 				loop = false;
