@@ -1,4 +1,5 @@
 package com.test.java.regex;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 public class Ex69_RegEx {
@@ -216,11 +217,283 @@ public static void main(String[] args) {
 	//m2();
 	//m3();
 	//m4();
-	m5();
-	
+	//m5();
+	m6();
 	
 	
 }//main
+
+private static void m6() {
+	
+	//상황) 회원가입
+	
+	// 아이디 > 필수 입력 4~12자 이내 영문자 숫자 _ 숫자시작불가 ,
+	//암호 > 필수 4~12자이내 , 
+	//이름 > 필수 2~4자이내 , 한글만 입력
+	//나이 > 필수 숫자만 입력 , 1~120
+	
+	Scanner scan = new Scanner(System.in);
+	//register1(scan);
+	register2(scan);
+
+	
+	
+	
+	
+}
+
+private static void register2(Scanner scan) {
+	
+	System.out.println("[회원가입]");
+	
+	String id ="";
+	String pw = "";
+	String name = "";
+	int age = 0;
+	
+	while(true) {
+	System.out.print("아이디: ");
+	id = scan.nextLine();
+	
+	if(invalidateId2(id)) {
+		System.out.println("아이디 > 필수 입력 4~12자 이내 영문자 숫자 _ 숫자시작불가 ,");
+	}else {
+		break;
+	}
+	
+	}
+	while(true) {
+		
+	System.out.print("비밀번호: ");
+	pw = scan.nextLine();
+
+		if(invalidatePw2(pw)) {
+			System.out.println("필수값 ,  4 ~ 12 자 이내 ");
+		}else {
+			break;
+		}
+	}
+	
+	while(true) {
+	System.out.print("이름: ");
+	name = scan.nextLine();
+	
+	if(invalidateName2(name)) {
+		System.out.println("이름 > 필수 2~4자이내 , 한글만 입력");
+	}else {
+		break;
+	}
+	
+	}
+	while(true) {
+	System.out.print("나이: ");
+	age = scan.nextInt();
+	
+	if(invalidateAge2(age)) {
+		System.out.println("나이 > 필수 숫자만 입력 , 1~120");
+		
+	}else {
+		break;
+	}
+	
+	}
+
+	System.out.println("회원 가입 처리");
+
+	System.out.println("종료");
+	scan.close();
+	
+}
+
+private static boolean invalidateAge2(int age) {
+	
+	// 정규식으로 불가능 . (숫자가 범위를 받는 유효성 검사에선 정규식 x 
+	// 나이 > 필수값 숫자만 1~120
+	//String regex = "[0-1]?[0-2]?[0-9]";
+	
+	
+	
+	return false;
+	
+	
+	
+}
+
+private static boolean invalidateName2(String name) {
+	
+	 // 이름 > 필수 값 2~4자이내 한글만 
+	
+	String regex = "^[가-힣]{2,4}$";
+	Pattern p1 = Pattern.compile(regex);
+	Matcher m1 = p1.matcher(name);
+	
+	return !m1.find();
+
+}
+
+private static boolean invalidatePw2(String pw) {
+	
+	//암호 > 필수값 , 4~12자이내
+	
+	String regex = ".{4,12}";
+	Pattern p1 = Pattern.compile(regex);
+	Matcher m1 = p1.matcher(pw);
+	
+	return !m1.find();
+	
+	
+}
+
+private static boolean invalidateId2(String id) {
+	
+	// 첫 글자는 영어랑 _만 올 수 있음 
+	//, 총 글자 길이는 4~12 
+	// $ 앞의 조건이 만족하면 동작
+	// ^ 뒤에 조건이 만족하면 동작 
+	String regex = "^[A-Za-z_][A-Za-z0-9_]{3,11}$";
+	
+	Pattern p1 = Pattern.compile(regex);
+	
+	Matcher m1 = p1.matcher(id);
+	
+//	if(m1.find()) {
+//		return false;
+//	}else {
+//		return true;
+//	}
+//	
+//	return false;
+	
+	return !m1.find();
+}
+
+private static void register1(Scanner scan) {
+	
+	System.out.println("[회원가입]");
+	
+	String id ="";
+	String pw = "";
+	String name = "";
+	int age = 0;
+	
+	while(true) {
+	System.out.print("아이디: ");
+	id = scan.nextLine();
+	
+	if(invalidateId(id)) {
+		System.out.println("아이디 > 필수 입력 4~12자 이내 영문자 숫자 _ 숫자시작불가 ,");
+	}else {
+		break;
+	}
+	
+	}
+
+	while(true) {
+	
+	System.out.print("비밀번호: ");
+	pw = scan.nextLine();
+
+		if(invalidatePw(pw)) {
+			System.out.println("필수값 ,  4 ~ 12 자 이내 ");
+		}else {
+			break;
+		}
+	}
+	
+	while(true) {
+	System.out.print("이름: ");
+	name = scan.nextLine();
+	
+	if(invalidateName(name)) {
+		System.out.println("이름 > 필수 2~4자이내 , 한글만 입력");
+	}else {
+		break;
+	}
+	
+	}
+	while(true) {
+	System.out.print("나이: ");
+	age = scan.nextInt();
+	
+	if(invalidateAge(age)) {
+		System.out.println("나이 > 필수 숫자만 입력 , 1~120");
+		
+	}else {
+		break;
+	}
+	
+	}
+
+	System.out.println("회원 가입 처리");
+
+	System.out.println("종료");
+	scan.close();
+	
+	
+}
+
+private static boolean invalidateAge(int age) {
+	
+	if(age < 1 || age >120) {
+		return true;
+	}
+	
+	return false;
+}
+
+private static boolean invalidateName(String name) {
+	if(name.length() < 2 || name.length() >4) {
+		return true;
+	}
+	for(int i = 0 ; i<name.length(); i++) {
+		if(name.charAt(i) <'가' || name.charAt(i)>'힣') {
+			return true;
+		}
+		
+	}
+	return false;
+}
+
+private static boolean invalidatePw(String pw) {
+	
+	if(pw.equals("") || pw == null) {
+		return true;
+	}
+	
+	if(pw.length() < 4 || pw.length() >12) {
+		return true;
+	}
+	
+	return false;
+}
+
+private static boolean invalidateId(String id) {
+	
+	//필수값
+	if(id.equals("") || id == null) {
+		return true;
+	}
+	
+	if(id.length() < 4 || id.length() >12) {
+		return true;
+	}
+	
+	for(int i=0; i<id.length(); i++) {
+		char c = id.charAt(i);
+		if((c<'A' || c> 'Z') && (c<'a' || c> 'z') && (c<'0' || c> '9') && c!='_'){
+			return true;
+		}
+	
+	}
+	char c = id.charAt(0);
+	
+	if(c>='0' && c<='9') {
+		return true;
+	}
+	
+	
+	return false;
+}
 
 private static void m5() {
 	

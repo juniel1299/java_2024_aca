@@ -147,4 +147,7 @@
 			<item value="C:\Users\user\Downloads\mylibrary.jar"/>
 		</list>
 	</section>
+	<section name="WorkingSetModelAwareSelectionDialog">
+		<item key="ShowVisibleOnly" value="true"/>
+	</section>
 </section>
