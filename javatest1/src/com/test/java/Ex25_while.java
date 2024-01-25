@@ -48,15 +48,15 @@ public class Ex25_while {
 	}//main
 
 	private static void m4() {
-	// TODO Auto-generated method stub
+	// TODO Auto-generated method stubS
 	//1~10 출력
 		//while문 
-		int n = 11;
-		while(n<=10) {
-			System.out.println(n);
-			n++;
-		}
-		System.out.println();
+//		int n = 1;
+//		while(n<=10) {
+//			System.out.println(n);
+//			n++;
+//		}
+//		System.out.println();
 		
 		//do while문 
 		int m = 11;
