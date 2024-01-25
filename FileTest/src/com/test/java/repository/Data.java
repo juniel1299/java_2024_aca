@@ -1,7 +1,10 @@
 package com.test.java.repository;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.Writer;
 import java.util.ArrayList;
 
 //텍스트 파일과 관련된 업무를 담당하는 담당자 
@@ -57,6 +60,43 @@ public class Data {
 			System.out.println("Data.load");
 			e.printStackTrace();
 			System.out.println("Data.load");
+		}
+		
+	}
+
+
+
+//프로그램 종료 > 메모리 > score.txt 저장 
+	public static void save() {
+		
+		try {
+			
+			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.SCORE));
+			
+			
+			for(Score score : Data.list) {
+				
+				//Score 객체 1개 > 홍길동,100,90,80 
+				String line = String.format("%s,%d,%d,%d\r\n"
+						,score.getName()
+						,score.getKor()
+						,score.getEng()
+						,score.getMath());
+				
+				
+				
+				writer.write(line);
+					
+			}
+			
+			
+			writer.close();
+			
+			
+			
+		} catch (Exception e) {
+			System.out.println("Data.save");
+			e.printStackTrace();
 		}
 		
 	}

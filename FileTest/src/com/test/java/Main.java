@@ -23,7 +23,7 @@ public static void main(String[] args) {
 
 	Scanner scan = new Scanner(System.in);
 	
-	while(loop) {
+	while(loop) { 
 		
 		try {
 			String title = FigletFont.convertOneLine("figlet\\rectangles.flf","Score"); 
@@ -35,7 +35,7 @@ public static void main(String[] args) {
 		System.out.println("1.성적 추가");
 		System.out.println("2.성적 확인");
 		System.out.println("3.성적 삭제");
-		
+		System.out.println("4.프로그램 종료");
 		System.out.println("=-------------------------------------");
 		System.out.print("선택(번호): ");
 		} catch (Exception e) {
@@ -51,9 +51,16 @@ public static void main(String[] args) {
 			
 		}else if(sel.equals("2")) {
 			
+			Service service = new Service();
+			service.list();
+			
 		}else if(sel.equals("3")) {
 			
-		}else {
+			Service service = new Service();
+			service.remove();
+			
+			
+		}else if(sel.equals("4")) {
 			loop = false;
 		}
 		
@@ -64,6 +71,7 @@ public static void main(String[] args) {
 	
 	System.out.println("프로그램 종료");
 	
+	Data.save();
 	
 	
 	
