@@ -26,8 +26,8 @@ private static void m2() {
 	System.out.println("1. 메모장");
 	System.out.println("2. 그림판");
 	System.out.println("3. 계산기");
+	System.out.println("4. 크롬");
 	System.out.println("선택: ");
-	
 	String sel = scan.nextLine();
 	//외부 프로그램 실행
 	try {
@@ -41,6 +41,9 @@ private static void m2() {
 		}
 		if(sel.equals("3")) {
 			builder.command("calc.exe");
+		}
+		if(sel.equals("4")) {
+			builder.command("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "http://naver.com");
 		}
 		builder.start();
 		
