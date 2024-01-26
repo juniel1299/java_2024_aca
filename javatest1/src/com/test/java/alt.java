@@ -70,6 +70,6 @@ public class alt {
     }
     
     public static void main(String[] args) {
-        dijkstra(0, 10);  // 종로3가에서 회현까지의 최단 경로 배열에 있는거 순서대로 숫자
+        dijkstra(0, 11);  // 종로3가에서 회현까지의 최단 경로 배열에 있는거 순서대로 숫자
     }
 }
