@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="lib" path="src/lib/mylibrary.jar"/>
 	<classpathentry exported="true" kind="lib" path="data-0.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="src/lib/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
