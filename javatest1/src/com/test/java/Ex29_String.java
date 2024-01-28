@@ -26,8 +26,8 @@ public static void main(String[] args) {
 	//m11();
 	//m12();
 	//m13();
-	//m14();
-	m15();
+	m14();
+	//m15();
 }//main
 
 private static void m15() {
@@ -64,7 +64,7 @@ private static void m14() {
 	
 	System.out.println(txt.replace("홍길동", "아무개")); 
 	
-	String content = "게시판 글을 씁니다. 바보야";
+	String content = "뭐해 바보야";
 	String word = "바보";
 	
 	//masking
@@ -115,8 +115,8 @@ private static void m12() {
 	System.out.println(txt.charAt(4)); //char -> 문자 코드값
 	System.out.println(txt.substring(4,5)); //String -> 문자코드값 x
 	
-	String jumin = "970410-2098765";
-	System.out.println(jumin.charAt(7) == '1' ? "남자" : "여자");
+	String jumin = "123456-1234567";
+	//System.out.println(jumin.charAt(7) == '1' ? "남자" : "여자");
 	System.out.println(jumin.substring(7,8) == "1" ? "남자" : "여자");
 	
 	//몇년생
@@ -230,7 +230,7 @@ private static void m9() {
 	
 	String content ="오늘 수업하는 과목은 Java입니다.";
 	
-	String word = "Java"; //검색어
+	String word = "java"; //검색어
 	
 	System.out.println(content.toUpperCase());
 	//System.out.println(content.toLowerCase());
@@ -244,7 +244,6 @@ private static void m9() {
 	}else {
 		System.out.println("결과x");
 	}
-	
 	//메서드().메서드().메서드() > 메서드 체인닝
 	//대소문 구분 x (case insensitive)
 	//검색율 높아짐 , 

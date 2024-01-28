@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.invoke.LambdaMetafactory"/>
-    <fullyQualifiedTypeName name="com.test.java.lambda.MyInterface"/>
-    <fullyQualifiedTypeName name="com.test.java.lambda.TestInterface"/>
-    <fullyQualifiedTypeName name="com.test.java.lambda.NoParemeterNoReturn"/>
-    <fullyQualifiedTypeName name="com.test.java.lambda.NoParameterReturn"/>
-    <fullyQualifiedTypeName name="com.test.java.lambda.ParameterNoReturn"/>
-    <fullyQualifiedTypeName name="com.test.java.lambda.MultiParameterNoReturn"/>
-    <fullyQualifiedTypeName name="com.test.java.lambda.NoParameterNoReturn"/>
     <fullyQualifiedTypeName name="com.test.java.lambda.Ex66_Lambda"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="com.test.java.lambda.Ex67_Lambda"/>
@@ -60,4 +52,12 @@
     <fullyQualifiedTypeName name="com.test.java.service.Service"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.test.java.repository.Data"/>
+    <fullyQualifiedTypeName name="com.test.java.openapi.Student"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONValue"/>
+    <fullyQualifiedTypeName name="javax.swing.text.html.HTMLEditorKit.Parser"/>
+    <fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+    <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
+    <fullyQualifiedTypeName name="com.test.java.openapi.Ex72_JSON"/>
 </qualifiedTypeNameHistroy>
