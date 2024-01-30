@@ -76,3 +76,36 @@ public class alt {
         dijkstra(0, 10);  // 종로3가에서 회현까지의 최단 경로를 찾아서 출력합니다.
     }
 }
+
+
+
+/*
+ 
+System.out.println("=================================================================");
+System.out.println("               현재 메뉴:행사 캘린더                              ");
+System.out.println("                    OOO                                          ");
+System.out.println("                     사원                                       ");
+System.out.println("==============================================================");
+System.out.println("                    1. 전체 일정 보기                       ");
+System.out.println("                   2. 일정 추가                           ");
+System.out.println("               3. 일정 제거                                ");
+
+
+
+System.out.println(" ============================================= ");
+System.out.println("                 전체 일정                    ");
+System.out.println(" ============================================= ");
+if(조건식){
+String date =""; //XXXX-XX-XX 식으로 받아야 함  
+}else{
+System.out.println(" 날짜는 XXXX-XX-XX의 형식으로 받습니다.");
+}
+date = scan.nextLine;
+
+String txt = "";
+txt = scan.nextLine;
+
+System.out.print(date);
+System.out.printf("\t %s",txt);  
+ 
+ */
