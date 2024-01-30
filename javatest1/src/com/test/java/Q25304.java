@@ -1,5 +1,6 @@
 package com.test.java;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 //https://www.acmicpc.net/problem/25304 백준
@@ -23,6 +24,10 @@ public static void main(String[] args) {
 		
 		if(total < subTotal) {
 			break;
+		
+		
+			
+		
 		}
 	}
 	

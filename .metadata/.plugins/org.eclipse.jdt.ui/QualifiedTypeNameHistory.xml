@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="java.util.function.BiConsumer"/>
     <fullyQualifiedTypeName name="java.lang.MatchException"/>
     <fullyQualifiedTypeName name="java.util.function.Supplier"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.util.function.IntConsumer"/>
     <fullyQualifiedTypeName name="java.util.function.IntToDoubleFunction"/>
     <fullyQualifiedTypeName name="java.util.function.BiFunction"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
     <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
     <fullyQualifiedTypeName name="com.test.java.openapi.Ex72_JSON"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>
