@@ -177,7 +177,7 @@ public static void main(String[] args) {
 	
 	
 	
-	
+	[가-힣A-Za-z] 
 	
 	
 	
