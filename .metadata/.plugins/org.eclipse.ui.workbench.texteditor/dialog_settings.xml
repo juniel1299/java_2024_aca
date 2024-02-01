@@ -6,8 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
-		<item key="selection" value="궁길동"/>
+		<item key="selection" value="userV"/>
 		<list key="findhistory">
+			<item value="userV"/>
+			<item value="userVoc"/>
+			<item value="favoriteDe"/>
 			<item value="[홍김최(남궁)]길동"/>
 			<item value="\S+"/>
 			<item value="\s+"/>
@@ -20,9 +23,6 @@
 			<item value="a{1,2}bc"/>
 			<item value="a{1,2}"/>
 			<item value="a{1}bc"/>
-			<item value="a{2}bc"/>
-			<item value="{n}"/>
-			<item value="[^0-9]+"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

@@ -4,10 +4,10 @@ public class TestView {
 
 	public static void main(String[] args) {
 		
-		ViewAll.stationNoChairOne();
-		ViewAll.stationNoChairTwo();
-		ViewAll.stationNoChairThree();
-		ViewAll.page();
+		ViewAll.userMainView();
+		
+		
+		
 	}//main
 	
 }
