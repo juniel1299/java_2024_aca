@@ -4,8 +4,8 @@ public class TestView {
 
 	public static void main(String[] args) {
 		
-		ViewAll.userMainView();
-		
+		ViewAll.seasonPassRegisterTop();
+		ViewAll.costTimeTable();
 		
 		
 	}//main

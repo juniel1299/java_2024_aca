@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
-		<item key="selection" value="userV"/>
+		<item key="selection" value="Na"/>
 		<list key="findhistory">
+			<item value="Na"/>
 			<item value="userV"/>
 			<item value="userVoc"/>
 			<item value="favoriteDe"/>
@@ -22,7 +23,6 @@
 			<item value="a{0,1}bc"/>
 			<item value="a{1,2}bc"/>
 			<item value="a{1,2}"/>
-			<item value="a{1}bc"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
