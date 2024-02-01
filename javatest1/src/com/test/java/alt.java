@@ -3,24 +3,24 @@ package com.test.java;
 import java.util.Arrays;
 //역 13개
 public class alt {
-    private static final int INF = 1000; // 무한대 값을 정의합니다. 두 정점이 직접 연결되어 있지 않을 경우 이 값을 사용합니다.
+    private static final int INF = Integer.MAX_VALUE; // 무한대 값을 정의합니다. 두 정점이 직접 연결되어 있지 않을 경우 이 값을 사용합니다.
     private static final int VERTEX_COUNT = 13;  // 전체 정점(지하철 역)의 수를 나타냅니다.
  // 인접 행렬을 통해 각 정점(지하철 역)간의 거리를 나타냅니다.
  // 직접 연결되어 있지 않은 정점들 사이의 거리는 무한대(INF)로 설정합니다.
     private static int[][] adj = {
-        {INF, 9, INF, 8, INF, INF, 6, 10, INF, INF, INF, INF, INF},              //0 종로3가 : 종로 5가, 종각, 을지로3가, 을지로4가
-        {9, INF, 8, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},           //1 종로5가 : 종로 3가, 동대문
-        {INF, 8, INF, INF, INF, INF, INF, INF, 7, INF, INF, INF, INF},           //2 동대문 : 
-        {8, INF, INF, INF, 10, INF, INF, INF, INF, INF, INF, INF, INF},
-        {INF, INF, INF, 10, INF, 7, INF, INF, INF, 11, INF, INF, INF},
-        {INF, INF, INF, INF, 7, INF, 8, INF, INF, INF, INF, INF, INF},
-        {6, INF, INF, INF, INF, 8, INF, 6, INF, INF, INF, INF, 7},
-        {10, INF, INF, INF, INF, INF, 6, INF, 10, INF, INF, INF, INF},
-        {INF, INF, 7, INF, INF, INF, INF, 10, INF, INF, INF, INF, 13},
-        {INF, INF, INF, INF, 11, INF, INF, INF, INF, INF, 9, INF, INF},
-        {INF, INF, INF, INF, INF, INF, INF, INF, INF, 9, INF, 7, INF},
-        {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 7, INF, 7},
-        {INF, INF, INF, INF, INF, INF, 7, INF, 13, INF, INF, 7, INF}
+        {INF, 9, INF, 8, INF, INF, 6, 10, INF, INF, INF, INF, INF},             //1 종로3가 : 종로 5가, 종각, 을지로3가, 을지로4가
+        {9, INF, 8, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},          //2 종로5가 : 종로 3가, 동대문
+        {INF, 8, INF, INF, INF, INF, INF, INF, 7, INF, INF, INF, INF},          //3 동대문  : 종로5가
+        {8, INF, INF, INF, 10, INF, INF, INF, INF, INF, INF, INF, INF},			//4 종각 : 종로3가, 시청
+        {INF, INF, INF, 10, INF, 7, INF, INF, INF, 11, INF, INF, INF},			//5 시청 : 종각, 을지로입구,서울역 
+        {INF, INF, INF, INF, 7, INF, 8, INF, INF, INF, INF, INF, INF},			//6 을지로입구 : 시청, 을지로3가
+        {6, INF, INF, INF, INF, 8, INF, 6, INF, INF, INF, INF, 7},				//7 을지로3가 : 종로3가,을지로입구,을지로4가,충무로
+        {10, INF, INF, INF, INF, INF, 6, INF, 10, INF, INF, INF, INF},			//8 을지로4가 : 종로3가, 을지로3가, 동대문역사문화공원
+        {INF, INF, 7, INF, INF, INF, INF, 10, INF, INF, INF, INF, 13},			//9 동대문역사문화공원 : 동대문, 을지로4가, 충무로
+        {INF, INF, INF, INF, 11, INF, INF, INF, INF, INF, 9, INF, INF},			//10 서울역 : 시청,회현
+        {INF, INF, INF, INF, INF, INF, INF, INF, INF, 9, INF, 7, INF},			//11 회현 : 서울역, 명동
+        {INF, INF, INF, INF, INF, INF, INF, INF, INF, INF, 7, INF, 7},			//12 명동 : 회현,충무로
+        {INF, INF, INF, INF, INF, INF, 7, INF, 13, INF, INF, 7, INF}			//13 충무로 : 을지로3가,동대문역사문화공원,명동
     };
  // 각 정점의 이름(지하철 역 이름)을 저장하는 배열입니다.
     private static String[] stationNames = {
@@ -73,7 +73,7 @@ public class alt {
     }
     
     public static void main(String[] args) {
-        dijkstra(0, 10);  // 종로3가에서 회현까지의 최단 경로를 찾아서 출력합니다.
+        dijkstra(2, 11);  // 종로3가에서 회현까지의 최단 경로를 찾아서 출력합니다.
     }
 }
 
