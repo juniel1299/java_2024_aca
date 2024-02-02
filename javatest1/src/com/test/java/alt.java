@@ -1,12 +1,16 @@
 package com.test.java;
 
 import java.util.Arrays;
+import java.util.Scanner;
 //역 13개
 public class alt {
     private static final int INF = Integer.MAX_VALUE; // 무한대 값을 정의합니다. 두 정점이 직접 연결되어 있지 않을 경우 이 값을 사용합니다.
     private static final int VERTEX_COUNT = 13;  // 전체 정점(지하철 역)의 수를 나타냅니다.
  // 인접 행렬을 통해 각 정점(지하철 역)간의 거리를 나타냅니다.
  // 직접 연결되어 있지 않은 정점들 사이의 거리는 무한대(INF)로 설정합니다.
+    
+
+    
     private static int[][] adj = {
         {INF, 9, INF, 8, INF, INF, 6, 10, INF, INF, INF, INF, INF},             //1 종로3가 : 종로 5가, 종각, 을지로3가, 을지로4가
         {9, INF, 8, INF, INF, INF, INF, INF, INF, INF, INF, INF, INF},          //2 종로5가 : 종로 3가, 동대문
@@ -73,39 +77,19 @@ public class alt {
     }
     
     public static void main(String[] args) {
-        dijkstra(2, 11);  // 종로3가에서 회현까지의 최단 경로를 찾아서 출력합니다.
+
+    	
+    	
+    	
+    	
+   
+    	
+//        "종로3가", "종로5가", "동대문", "종각", "시청",
+//        "을지로입구", "을지로3가", "을지로4가", "동대문역사문화공원",
+//        "서울역", "회현", "명동", "충무로"
+    	
+        dijkstra(0, 11);  // 종로3가에서 회현까지의 최단 경로를 찾아서 출력합니다.
     }
 }
 
 
-
-/*
- 
-System.out.println("=================================================================");
-System.out.println("               현재 메뉴:행사 캘린더                              ");
-System.out.println("                    OOO                                          ");
-System.out.println("                     사원                                       ");
-System.out.println("==============================================================");
-System.out.println("                    1. 전체 일정 보기                       ");
-System.out.println("                   2. 일정 추가                           ");
-System.out.println("               3. 일정 제거                                ");
-
-
-
-System.out.println(" ============================================= ");
-System.out.println("                 전체 일정                    ");
-System.out.println(" ============================================= ");
-if(조건식){
-String date =""; //XXXX-XX-XX 식으로 받아야 함  
-}else{
-System.out.println(" 날짜는 XXXX-XX-XX의 형식으로 받습니다.");
-}
-date = scan.nextLine;
-
-String txt = "";
-txt = scan.nextLine;
-
-System.out.print(date);
-System.out.printf("\t %s",txt);  
- 
- */
