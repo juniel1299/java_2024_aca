@@ -1,5 +1,4 @@
-package com.test.java.chaos;
-
+package com.test.java.viewfolder;
 public class member {
 
 	public static String authName() {

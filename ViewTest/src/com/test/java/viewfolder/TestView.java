@@ -1,4 +1,4 @@
-package com.test.java.chaos;
+package com.test.java.viewfolder;
 
 public class TestView {
 
