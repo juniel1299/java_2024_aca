@@ -30,8 +30,9 @@ public static void main(String[] args) {
 	
 	for (int i=0; i<lang.length(); i++) {
 		if(lang.indent(i).equals(first)) {
-			
+			count++;
 		}
+		
 		
 	
 	
@@ -39,6 +40,7 @@ public static void main(String[] args) {
 	
 	
 	
+	System.out.println(count);
 	
 }//main
 }
