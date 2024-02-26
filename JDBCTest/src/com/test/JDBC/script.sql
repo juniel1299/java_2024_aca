@@ -26,4 +26,6 @@ update tbladdress set age = age + 1 where seq = 1;
 delete from tblAddress where seq = 6;
 
 select * from tbladdress;
+
+select * from tblInsa;
 commit;
